@@ -1,0 +1,16 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+      - image: circleci/elixir:1.4.2
+      - image: postgres:9.4.1
+        env:
+          - POSTGRES_USER=ubuntu
+    working_directory: ~/circleci-demo-elixir-phoenix
+    steps:
+      - type: checkout
+      - run: mix local.rebar --force
+      - run: mix local.hex --force
+      - run: mix deps.get
+      - run: mix test
+

@@ -1,5 +1,7 @@
 # HelloPhoenix
 
+[![CircleCI](https://circleci.com/gh/CircleCI-Public/circleci-demo-elixir-phoenix.svg?style=svg)](https://circleci.com/gh/CircleCI-Public/circleci-demo-elixir-phoenix)
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
