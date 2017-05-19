@@ -8,7 +8,7 @@ jobs:
           - POSTGRES_USER=root
     working_directory: ~/circleci-demo-elixir-phoenix
     steps:
-      - type: checkout
+      - checkout
       - run: mix local.rebar --force
       - run: mix local.hex --force
       - run: mix deps.get
