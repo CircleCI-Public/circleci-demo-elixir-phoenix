@@ -3,7 +3,7 @@ jobs:
   build:
     parallelism: 1
     docker:
-      - image: circleci/elixir:1.5
+      - image: circleci/elixir:1.7.3
         environment:
           MIX_ENV: test
       - image: circleci/postgres:10.1-alpine
